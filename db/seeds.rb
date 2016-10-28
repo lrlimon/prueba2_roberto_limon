@@ -18,4 +18,4 @@ c2 = Category.create(:name => "Category 2")
 
 Inventory.create(:serial => "Serial A", :size => 10, :description => "Inventory 1", :category => c1)
 Inventory.create(:serial => "Serial B", :size => 12, :description => "Inventory 2", :category => c2)
-Inventory.create(:serial => "Serial C", :size => 8), :description => "Inventory 3", :category => c1)
+Inventory.create(:serial => "Serial C", :size => 8, :description => "Inventory 3", :category => c1)
