@@ -1,0 +1,12 @@
+<h1>Works#index</h1>
+<p>Find me in app/views/works/index.html.erb</p>
+
+<% @works.each do |w| %>
+    <p>
+      name: <%= w.inventory.serial %>
+      <br>
+      category: <%= w.inventory.category.name %>
+      <br>
+      usuario: <%= w.user.name %>
+    </p>
+<% end %>
