@@ -2,6 +2,9 @@ class Work < ActiveRecord::Base
   belongs_to :user
   belongs_to :inventory
 
+  scope :last_5, -> { last(5) }
+  scope :no_item, -> { where(:inventory => nil) }
+
   validate :validates_user
 
   def validates_user
